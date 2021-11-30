@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hamburger Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Countable</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navBar margin">
+        <a href="#home" class="active logo spacing">COUNTABLE</a>
+        <div id="navLinks">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#content">Content</a></li>
+            </ul>
+        </div>
+        <div  class="icons">
+            <a href="javascript:void(0);" onclick="toggleSearch()" class="search"><i class="fa fa-magnifying-glass"></i></a>
+            <!-- add search box. magnifying glass toggles  -->
+            <a href="javascript:void(0);" onclick="toggleNavBar()">
+                <i id="icon" class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="searchBar">
+            <input type="text">
+            <button> Search </button>
+        </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <div id="home" class="imageContainer">
+        <div class="imageText">
+            <h2>Attract, engage, & activate
+                your stakeholders to power your purpose.</h2>
+            <!-- text will only be visible on desktop -->
+            <p class="desktop">Countable builds privately-branded social networks
+            that power your social impact campaigns and initiatives.</p>
+        </div>
+    </div>
+
+    <!-- Header Image -->
+    <section id="content" class="margin">
+        <h2 class="centerText margin spacing">Featured Content</h2>
+        <div class="gridWrapper">
+            <div class="gridItem">
+                <img src="https://images.unsplash.com/photo-1637822930995-2aa3361b3a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" alt="Film roll on table">
+                <h4>Film</h4>
+                <p>Erlangen, Deutschland</p>
+            </div>
+            <div class="gridItem">
+                <img src="https://images.unsplash.com/photo-1637674765204-6ba194debe6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" alt="Neon sign">
+                <h4>Editorial</h4>
+                <p>Moscow, Россия</p>
+            </div>
+            <div class="gridItem">
+                <img src="https://images.unsplash.com/photo-1503449539626-3ca98a08ad3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" alt="">
+                <h4>Alley</h4>
+                <p>San Francisco, United States</p>
+            </div>
+            <div class="gridItem">
+                <img src="https://images.unsplash.com/photo-1637420291184-87cf1f5f4c4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" alt="">
+                <h4>The Block</h4>
+                <p>Unknown</p>
+            </div>
+            <div class="gridItem">
+                <img src="https://images.unsplash.com/photo-1637289900062-7870ca6eaf47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80" alt="">
+                <h4>Hope</h4>
+                <p>Vietnam</p>
+            </div>
+            <div class="gridItem">
+                <img src="https://images.unsplash.com/photo-1633026297106-e5c2ac6a1c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" alt="">
+                <h4>EQUAL RIGHTS</h4>
+                <p>Gostenhof, Nürnberg, Deutschland</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="centerText margin">
+        <a href="https://www.countable.com/">Copyright &copy; 2021 Countable Corp. All Rights Reserved.</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+  width: auto;
+  margin: auto;
+  height: 100%;
+  border-radius: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+#content {
+  margin: 0 2px
+}
+
+.navBar {
+  overflow: hidden;
+  position: relative;
+  padding-left: 24px;
+
+}
+
+.navBar #navLinks {
+  display: none;
+}
+
+#navLinks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navLinks li a {
+  display: block;
+  width: 60px;
+}
+
+.navBar a{
+  padding: 14px 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.navBar .icons{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 16px;
+}
+
+.icons > a {
+  margin: 0 8px;
+}
+
+#navLinks a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.fa {
+  color: black;
+  }
+
+.logo{
+  font-weight: 400 !important;
+  font-size: 20px !important;
+}
+
+.imageContainer {
+  padding-top: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.imageText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(238, 235, 235);
+}
+
+.desktop {
+  display: none;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.gridItem img, .gridItem p, .gridItem h4 {
+  width: 100%;
+  margin: 0px;
+}
+
+h4 {
+  font-weight: bold !important;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.margin {
+  margin: 16px 0;
+}
+
+.spacing {
+  letter-spacing: 2px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#searchBar{
+  display: none;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  #content {
+    font-size: 20px;
+  }
+
+  #navLinks ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #navLinks li {
+    float: left;
+  }
+
+  #navLinks li a {
+    text-align: center;
+  }
+
+  .imageContainer {
+    height: 320px;
+  }
+
+  .imageText h2 {
+    font-size: 54px;
+  }
+
+  .imageText p {
+    font-size: 24px;
+  }
+
+  .gridWrapper {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .logo{
+    font-size: 32px !important;
+  }
+
+  i {
+    font-size: 24px;
+  }
+
+  .navBar {
+    padding-left: 32px;
+  }
+}
